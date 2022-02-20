@@ -1,4 +1,5 @@
 <?php 
-require 'view.index.view.php';
+require 'admin/config.php';
+require 'views/index.view.php';
 
 ?>
