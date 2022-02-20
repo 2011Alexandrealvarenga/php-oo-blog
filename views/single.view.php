@@ -1,6 +1,4 @@
-<?php 
-require 'header.php';
-?>
+<?php require 'header.php'; ?>
     <div class="contenedor">
         <div class="post">
             <article>
@@ -13,7 +11,6 @@ require 'header.php';
                 <a href="#" class="continuar">Continuar Lendo</a>
             </article>
         </div>
-        <?php require 'paginaction.php'; ?>
     </div>
 
 <?php require 'footer.php'; ?>
