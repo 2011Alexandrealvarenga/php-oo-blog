@@ -2,7 +2,6 @@
 require 'header.php';
 ?>
     <div class="contenedor">
-
         <?php foreach($posts as $post): ?>
         <div class="post">
             <article>
@@ -16,10 +15,6 @@ require 'header.php';
             </article>
         </div>
         <?php endforeach; ?>
-
-
-
         <?php require 'paginaction.php'; ?>
     </div>
-
 <?php require 'footer.php'; ?>
