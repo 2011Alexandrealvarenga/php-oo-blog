@@ -22,5 +22,23 @@ function obtener_post($post_por_pagina, $conexion){
     $sentencia->execute();
     return $sentencia->fetchAll();
 }
+function id_articulo($id){
+    return (int)limpiarDatos($id);
+}
 
+function obtener_post_por_id($conexion, $id){
+    $resultado = $conexion->query("SELECT * FROM articulos WHERE id=$id LIMIT 1");
+    $resultado = $resultado->fetchAll();
+    return ($resultado) ? $resultado : false;
+}
+function fecha($fecha){
+    $timestamp = strtotime($fecha);
+    $meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+    $dia =date('d', $timestamp);
+    $mes =date('m', $timestamp) - 1;
+    $year =date('Y', $timestamp);
+
+    $fecha = "$dia de " .$meses[$mes]." de $year";
+    return $fecha;
+}
 ?>
