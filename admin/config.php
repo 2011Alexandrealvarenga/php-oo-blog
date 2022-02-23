@@ -14,7 +14,7 @@ $blog_config = array(
     'carpeta_imagenes' =>'imagenes/'
 );
 $blog_admin = array(
-    'usuario' => 'Carlos',
+    'usuario' => 'carlos',
     'password' => '123'
 );
 
