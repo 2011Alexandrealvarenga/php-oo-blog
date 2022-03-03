@@ -11,7 +11,7 @@ require '../views/header.php';
                 <h3 class="titulo"><?php echo $post['id'] . '.- '.$post['titulo']; ?> </h3>
                 <a href="editar.php?id=<?php echo $post['id'];?> ">Editar</a>
                 <a href="../single.php?id=<?php echo $post['id']; ?>">Ver </a>
-                <a href="">Apagar</a>
+                <a href="../admin/borrar.php?id=<?php echo $post['id'];?>">Apagar</a>
 
             </article>
         </div>
